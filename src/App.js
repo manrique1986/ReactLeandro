@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Headers/Headers';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hola mundo</h1>
-    </div>
-  );
-}
 
-export default App;
+    <fragment>
+      <Header />
+    </fragment>
+  )
+}
+export default Header
