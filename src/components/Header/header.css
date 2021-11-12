@@ -1,3 +1,9 @@
-.texto{
-    color: yellow
+.BarraNav{
+    background-color: brown;
+}
+
+.saludo{
+    text-align: center;
+    color: brown;
+    
 }

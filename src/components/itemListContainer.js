@@ -1,9 +1,10 @@
+import "./Header/header.css"
 
-
-function itemListContainer (props){
+const itemListContainer = ({ saludo }) =>{
     return (
-        <div className="">
-            <p className="">{props.text}</p>
+        <div className="saludo">
+            <h1>{saludo}</h1>
+            <p>Cerveza artesanal</p>
         </div>
     )
 }

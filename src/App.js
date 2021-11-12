@@ -1,7 +1,8 @@
 
 import './App.css';
-import Header from './components/Header/header';
-import itemListContainer from './components/itemListContainer';
+import Header from './components/Header/Header';
+import ItemListContainer from './components/itemListContainer';
+
 
 
 
@@ -10,7 +11,7 @@ function App() {
 
     <fragment>
       <Header />
-      <itemListContainer greeting="Hello, world!" />
+      <ItemListContainer saludo = "Bienvenidos a HALSEY" />
     </fragment>
   )
 }
