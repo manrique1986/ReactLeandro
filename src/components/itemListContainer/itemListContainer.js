@@ -1,5 +1,4 @@
 import "./Header/header.css";
-import ItemList from "./itemList"
 
 const itemListContainer = ({ saludo }) =>{
     return (

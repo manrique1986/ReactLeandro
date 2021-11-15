@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+
 function itemCount (){
     const [number, setNumber]= useState(10)
 
@@ -12,12 +13,12 @@ function itemCount (){
     }
 
     return (
-        <fragment>
+        <Fragment>
         <button onClick={agregar}>+</button>
         <h1> {number}</h1>
         <button onClick={restar}>-</button>
 
-       </fragment>    
+       </Fragment>    
             
             
     )
