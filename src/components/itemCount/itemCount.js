@@ -1,27 +1,30 @@
 import { useState } from "react"
+import "./index.css"
 
 
-function itemCount (){
-    const [number, setNumber]= useState(10)
+function ItemCount (inicial){
+    const [number, setNumber]= useState(0)
 
     const agregar = () =>{
         setNumber (number + 1)
     }
 
     const restar = () =>{
-        setNumber (number - 1)
+        if ( number > 0 ){
+            setNumber (number - 1)
+        }
     }
 
     return (
-        <Fragment>
-        <button onClick={agregar}>+</button>
+        <div className = "button" >
+        <button className = "sumar"onClick={agregar}>+</button>
         <h1> {number}</h1>
-        <button onClick={restar}>-</button>
+        <button className = "restar"onClick={restar}>-</button>
 
-       </Fragment>    
+       </div>      
             
             
     )
 }
     
-export default itemCount
+export default ItemCount

@@ -14,7 +14,7 @@ function App() {
     <Fragment>
       <Header />
       <ItemListContainer saludo = "Bienvenidos a HALSEY" />
-      <ItemCount />
+      <ItemCount inicial = {0} />
     </Fragment>
   )
 }
