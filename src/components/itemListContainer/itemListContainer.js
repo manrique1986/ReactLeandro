@@ -1,9 +1,9 @@
 import "./index.css"
 
-const itemListContainer = ({ saludo }) =>{
+const itemListContainer = ({ greeting }) =>{
     return (
         <div className="saludo">
-            <h1>{saludo}</h1>
+            <h1>{greeting}</h1>
             <p>Cerveza artesanal</p>
         </div>
     )

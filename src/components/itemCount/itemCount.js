@@ -16,9 +16,9 @@ function ItemCount (inicial){
     }
 
     return (
-        <div className = "button" >
+        <div className = "contador" >
         <button className = "sumar"onClick={agregar}>+</button>
-        <h1> {number}</h1>
+        <h1 className = "numero"> {number}</h1>
         <button className = "restar"onClick={restar}>-</button>
 
        </div>      
