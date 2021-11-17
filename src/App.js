@@ -1,6 +1,5 @@
 import { Fragment } from 'react'
 import './App.css';
-
 import Header from './components/Header/Header';
 import ItemCount from './components/itemCount/itemCount';
 import ItemListContainer from './components/itemListContainer/itemListContainer';
