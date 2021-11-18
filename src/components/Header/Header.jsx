@@ -1,4 +1,4 @@
-import Carrito from "../carrito/carrito";
+import Carrito from "../Carrito/Carrito";
 import "./header.css";
 
 const Header = () => {

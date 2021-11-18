@@ -1,8 +1,8 @@
+
 import { Fragment } from 'react'
 import './App.css';
 import Header from './components/Header/Header';
-import ItemCount from './components/itemCount/itemCount';
-import ItemListContainer from './components/itemListContainer/itemListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 
 
 
@@ -14,7 +14,7 @@ function App() {
     <Fragment>
       <Header />
       <ItemListContainer greeting = "Bienvenidos a HALSEY" />
-      <ItemCount inicial = {0} />
+      
   
     </Fragment>
   )

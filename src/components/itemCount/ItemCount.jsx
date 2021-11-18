@@ -2,14 +2,16 @@ import { useState } from "react";
 import "./index.css";
 
 
-function ItemCount (inicial){
+function ItemCount (){
     const [number, setNumber]= useState(0)
 
-    const agregar = () =>{
-        setNumber (number + 1)
+    const onAdd = () =>{
+        if ( number <  10 ){
+            setNumber (number + 1)
+        }
     }
 
-    const restar = () =>{
+    const onDecret = () =>{
         if ( number > 0 ){
             setNumber (number - 1)
         }
@@ -17,9 +19,9 @@ function ItemCount (inicial){
 
     return (
         <div className = "contador" >
-        <button className = "sumar"onClick={agregar}>+</button>
+        <button className = "sumar"onClick={onAdd}>+</button>
         <h1 className = "numero"> {number}</h1>
-        <button className = "restar"onClick={restar}>-</button>
+        <button className = "restar"onClick={onDecret}>-</button>
 
        </div>      
             
