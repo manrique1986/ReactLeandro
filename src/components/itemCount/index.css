@@ -1,10 +1,13 @@
-.contador{
-
-  text-align: center;
-  color: brown;
-  border:   4px solid brown;
-
+.cont{
+  display:flex;
+  justify-content: center;
+ 
+  
 }
 
+.button{
+  border: none;
+  margin: 15px;
+}
 
 

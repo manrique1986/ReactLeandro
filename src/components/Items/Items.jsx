@@ -6,7 +6,7 @@
         price: 250,
         stock: 15,
         id: 1,
-        img: "img/honey.jpg",
+        img: "img/images.jpg",
     },
      { 
          name: 'Scottish',
@@ -22,7 +22,7 @@
         price: 250,
         stock: 15,
         id: 3,
-        img: "img/blonde.jpg",
+        img: "img/blonde2.jpg",
      },
 
      {

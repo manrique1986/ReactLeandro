@@ -1,0 +1,16 @@
+.card{
+    height: 40%;
+    width: 20%;
+    float: left;
+    margin: 20px
+    
+}
+
+.cardButton{
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
