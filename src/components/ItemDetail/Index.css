@@ -1,0 +1,21 @@
+.detail{
+
+  margin: 80px;
+
+ 
+}
+
+.detailParrafo{
+   width:50%;
+   height: 50%;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.detailName{
+
+  text-align: center;
+  float: left;
+  }
+
+  
