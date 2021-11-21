@@ -8,6 +8,9 @@
 .button{
   border: none;
   margin: 15px;
+  background: none;
+  box-shadow: 2px 5px 20px 0 brown;
+  border-radius: 2em;
 }
 
 

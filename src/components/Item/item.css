@@ -2,13 +2,18 @@
     height: 40%;
     width: 20%;
     float: left;
-    margin: 20px
+    margin: 20px;
+    box-shadow: 2px 4px 15px 0 brown;
+    border-radius: 3em;
+    
+    
     
 }
 
 .cardButton{
     color: brown;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 
