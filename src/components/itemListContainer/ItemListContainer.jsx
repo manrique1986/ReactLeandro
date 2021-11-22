@@ -25,7 +25,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <div className="saludo">
             <h1>{greeting}</h1>
-            <p>Cerveza artesanal</p>
+            <p className= "tracking-in-contract">Cerveza artesanal</p>
             <ItemList items={items} />
         </div>
     );

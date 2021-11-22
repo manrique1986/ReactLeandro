@@ -14,7 +14,7 @@ function App() {
 
     <Fragment>
       <Header />
-      <ItemListContainer greeting = "Bienvenidos a HALSEY" />
+      <ItemListContainer className="tracking-in-contract" greeting = "Bienvenidos a HALSEY" />
       <ItemDetailContainer />
       
   

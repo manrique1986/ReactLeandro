@@ -9,9 +9,9 @@ export const ItemDetailContainer = () => {
 
     useEffect(() => {
 
-        const getProduct = new Promise( (res) => {
+        const getProduct = new Promise( (resolve,eject) => {
             setTimeout(() => {
-                res(productos[0]);
+                resolve(productos[0]);
 
             }, 2000);
         });

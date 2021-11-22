@@ -15,13 +15,13 @@ const Header = () => {
               <a className="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link texto" href="#">Productos</a>
+            <a className="nav-link active" aria-current="page" href="#">Productos</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Galeria</a>
+            <a className="nav-link active" aria-current="page" href="#">Galeria</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contacto</a>
+            <a className="nav-link active" aria-current="page" href="#">Contacto</a>
             </li>
           </ul>
 
