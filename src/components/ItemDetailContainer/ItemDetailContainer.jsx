@@ -22,5 +22,5 @@ export const ItemDetailContainer = () => {
    
 }, []);
 
-return <ItemDetail  {...product} />;
+return <ItemDetail {...product} />;
 }

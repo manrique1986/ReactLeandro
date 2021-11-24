@@ -11,6 +11,7 @@ const item = ({ item }) => {
         <fragment>
 
             <div className="container" >
+
                 <div className="card">
                     <p className="cardTitle">{item.name}</p>
 
@@ -19,15 +20,16 @@ const item = ({ item }) => {
 
                         <span className="cardPrice">${item.price}</span>
                     </div>
-                    <ItemCount /> 
+                    <ItemCount />
 
                     <a href="#" className="cardButton">Agregar a carrito</a>
 
                 </div>
 
+
             </div>
 
-         
+
 
         </fragment>
 

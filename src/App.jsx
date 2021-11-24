@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
@@ -12,13 +13,16 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 function App() {
   return (
 
-    <Fragment>
+    <BrowserRouter>
       <Header />
-      <ItemListContainer className="tracking-in-contract" greeting = "Bienvenidos a HALSEY" />
-      <ItemDetailContainer />
+      <Routes>
+        <Route path="/" element={<ItemListContainer className="tracking-in-contract" greeting = "Bienvenidos a HALSEY" />}/>
+        <Route path="/" element={<ItemDetailContainer />} />
+      
+      </Routes>
       
   
-    </Fragment>
+    </BrowserRouter>
   )
 }
 export default App
