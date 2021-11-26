@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Carrito from "../Carrito/Carrito";
 import "./header.css";
 
@@ -12,16 +13,16 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item ">
-              <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+              <Link className="nav-link active" aria-current="page" to="Inicio">Inicio</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Productos</a>
+            <Link className="nav-link active" aria-current="page" to="/Productos">Productos</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Galeria</a>
+            <Link className="nav-link active" aria-current="page" to="/Galeria">Galeria</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Contacto</a>
+            <Link className="nav-link active" aria-current="page" to="#">Contacto</Link>
             </li>
           </ul>
 

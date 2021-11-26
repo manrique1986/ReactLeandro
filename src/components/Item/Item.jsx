@@ -1,5 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount";
 import "./item.css"
+import { Link } from "react-router-dom"
+
 
 
 
@@ -8,7 +10,8 @@ const item = ({ item }) => {
 
     return (
 
-        <fragment>
+        <Link to= {`/product/${item.id}`}>
+            
 
             <div className="container" >
 
@@ -22,7 +25,7 @@ const item = ({ item }) => {
                     </div>
                     <ItemCount />
 
-                    <a href="#" className="cardButton">Agregar a carrito</a>
+                    <Link to="#" className="cardButton">Agregar a carrito</Link>
 
                 </div>
 
@@ -31,7 +34,7 @@ const item = ({ item }) => {
 
 
 
-        </fragment>
+        </Link>
 
 
     )
