@@ -1,15 +1,15 @@
-#HALSEY#
+                
 
 Halsey es un e-commerce de venta de cerveza artesanal
 
 Contiene:
 
-Categorias por funcionalidad
-Posibilidad de compra desde listado de items y desde el detalle del item
-Selección de cantidad de productos con control al stock
-Carrito de compras 
-Landing page
-Acerca de nosotros
+1-Categorias por funcionalidad
+2-Posibilidad de compra desde listado de items y desde el detalle del item
+3-Selección de cantidad de productos con control al stock
+4-Carrito de compras 
+5-Landing page
+6-Acerca de nosotros
 
 ### `INSTALACION`
 
@@ -26,4 +26,4 @@ yarn start
 para inicializar el proyecto, que se visualizará en [http://localhost:3000]
 
 
-[url:/img/honey.jpg]
+<img src="http:/img/React-project.gif">
