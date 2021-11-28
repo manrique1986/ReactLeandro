@@ -1,4 +1,4 @@
-import ItemCount from "../ItemCount/ItemCount";
+
 import "./item.css"
 import { Link } from "react-router-dom"
 
@@ -23,7 +23,7 @@ const item = ({ item }) => {
 
                         <span className="cardPrice">${item.price}</span>
                     </div>
-                    <ItemCount />
+                   
 
                     <Link to="#" className="cardButton">Agregar a carrito</Link>
 

@@ -1,5 +1,4 @@
 
-import { Fragment } from 'react'
 import './App.css';
 import Header from './components/Header/Header';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
@@ -17,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/Inicio" element={<Inicio />} />
+        <Route path="/inicio" element={<Inicio />} />
         <Route path="/Productos/" element={<ItemListContainer className="tracking-in-contract" greeting = "Bienvenidos a HALSEY" />}/>
         <Route path="/product/:itemId" element={<ItemDetailContainer />} />
       

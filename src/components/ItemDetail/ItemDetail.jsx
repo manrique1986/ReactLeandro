@@ -1,20 +1,34 @@
+
+import { Fragment } from 'react'
 import React from "react";
 import "./Index.css";
+import ItemCount from "../ItemCount/ItemCount";
 
- export const ItemDetail = ({name, img, detail }) => {
+
+
+const ItemDetail = ({ name, img, detail }) => {
     return (
 
-        <div className="detailContainer">
+        <Fragment>
 
-            <div className="detail">
-                <h1 className="detailName">{name}</h1>
-                <img className="detailImg" src={img} alt="" />
-                <p className="detailParrafo">{detail}</p>
+            <div className="detailContainer">
 
+                <div className="detail">
+                    <h1 className="detailName">{name}</h1>
+                    <img className="detailImg" src={img} alt="" />
+                    <p className="detailParrafo">{detail}</p>
+
+                    <ItemCount />
+
+
+                </div>
 
             </div>
 
-        </div>
+        </Fragment>
     )
 }
+
+
+export default ItemDetail
 
