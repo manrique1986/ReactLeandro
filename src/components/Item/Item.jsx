@@ -23,9 +23,6 @@ const item = ({ item }) => {
 
                         <span className="cardPrice">${item.price}</span>
                     </div>
-                   
-
-                    <Link to="#" className="cardButton">Agregar a carrito</Link>
 
                 </div>
 

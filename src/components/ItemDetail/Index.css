@@ -1,6 +1,12 @@
-.detail{
-  margin: 80px;
+.container1{
+  text-align: center;
+  background-color: rgba(246, 204, 204, 0.876);
+  height: 40%;
+  width: 20%;
+  margin: 20px;
+  border: 2px solid brown
 
+  
 }
 
 .detailParrafo{
@@ -15,6 +21,12 @@
   text-align: center;
   float: left;
   }
+
+  .cardButton{
+    text-align: center;
+  }
+
+ 
 
 
   
