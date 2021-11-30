@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./index.css";
 
 
-function ItemCount() {
+const ItemCount = ({addCart})=> {
     const [number, setNumber] = useState(0)
 
     const onAdd = () => {
@@ -17,6 +17,9 @@ function ItemCount() {
         }
     }
 
+
+  
+
     return (
         <div className="contador" >
 
@@ -25,6 +28,12 @@ function ItemCount() {
                 <h3 className="numero"> {number}</h3>
                 <button className="button" onClick={onAdd}>+</button>
 
+            </div>
+
+            <div>
+                <button disabled={number === 0} onClick={() => addCart(number)}
+                >Agregar al carrito
+                </button>
             </div>
 
         </div>

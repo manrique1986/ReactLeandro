@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 
 
-const ItemDetail = ({ name, img, detail, price }) => {
+const ItemDetail = ({ name, img, detail, price, addCart, irAlCarrito }) => {
     return (
 
         <Fragment>
@@ -23,17 +23,19 @@ const ItemDetail = ({ name, img, detail, price }) => {
                     <div className="cardData">
 
                         <p className="cardDetail">{detail}</p>
-                        
-                    < ItemCount />
+
+                        {irAlCarrito ? (<><Link to="/cart">Terminar compra</Link></>) :
+                         (<>< ItemCount addCart={addCart} /></>)}
 
 
-                    <Link to="#" className="cardButton">Agregar a carrito</Link>
+
+
 
                     </div>
 
                 </div>
 
-    
+
             </div>
         </Fragment>
     )
