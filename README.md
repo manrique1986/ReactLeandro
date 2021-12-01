@@ -25,5 +25,5 @@ Ejecuta en el directorio del proyecto
 yarn start
 para inicializar el proyecto, que se visualizará en [http://localhost:3000]
 
-
-<img src="http:/img/React-project.gif">
+###### page demo: point_down:
+![Demo] (img/React-project.gif)
