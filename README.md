@@ -25,4 +25,4 @@ Ejecuta en el directorio del proyecto
 yarn start
 para inicializar el proyecto, que se visualizará en [http://localhost:3000]
 
-![Halsey](https://i.picasion.com/pic91/1062f518d1bb143386a1d206089d72a8.gif)
+![Halsey](https://imagizer.imageshack.com/img922/7185/tEeOu1.gif)
