@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Carrito from "../Carrito/Carrito";
+import CartWidget from "../CartWidget/CartWidget";
 import "./header.css";
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
             </li>
           </ul>
 
-         <Carrito />
+         <CartWidget />
         </div>
       </div>
 

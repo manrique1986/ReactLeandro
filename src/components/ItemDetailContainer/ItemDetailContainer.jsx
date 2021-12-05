@@ -41,7 +41,7 @@ export const ItemDetailContainer = () => {
     }, [itemId]);
 
     const addCart = (cantidad) => {
-        console.log(cantidad, product);
+        console.log({...product, cantidad: cantidad});
         setIrAlCarrito(true);
 
     }
@@ -50,6 +50,6 @@ export const ItemDetailContainer = () => {
 
 
     return loader ? (
-        <img className="gif" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"  />
     ) : <ItemDetail {...product} addCart={addCart} irAlCarrito={irAlCarrito} />;
 };

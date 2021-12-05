@@ -1,3 +1,4 @@
+ import honey from './../../assets/images.jpg'
  export const productos = [
 
     {
@@ -6,7 +7,7 @@
         price: 250,
         stock: 15,
         id: "1",
-        img: "img/images.jpg",
+        img: honey,
         detail:"Las cervezas Honey se elaboran con miel, la que les aporta a un sabor dulce y azúcares fermentables que elevan el contenido alcohólico de la cerveza. Las cervezas con miel son algo turbias y especiadas. Además tiene un final seco."
     },
      { 

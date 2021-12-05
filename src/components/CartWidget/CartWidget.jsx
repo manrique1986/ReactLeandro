@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 
-const carrito = () => {
+const CartWidget = () => {
 
 
 
@@ -19,4 +19,4 @@ const carrito = () => {
   )
 }
 
-export default carrito
+export default CartWidget
