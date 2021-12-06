@@ -13,22 +13,21 @@ const ItemDetail = ({ name, img, detail, price, addCart, irAlCarrito }) => {
 
         <Fragment>
 
+            <img src={img} className="detailImg tilt-in-fwd-bl" alt="producto" />
+
 
             <div className="container1" >
 
                 <div className="card1">
                     <h1 className="cardTitle1">{name}</h1>
 
-                    <img src={img} className="cardImg" alt="producto" />
+
                     <div className="cardData">
 
                         <p className="cardDetail">{detail}</p>
 
-                        {irAlCarrito ? (<><Link to="/cart">Terminar compra</Link></>) :
-                         (<>< ItemCount addCart={addCart} /></>)}
-
-
-
+                        {irAlCarrito ? (<><Link to="/Cart">Terminar compra</Link></>) :
+                            (<>< ItemCount addCart={addCart} /></>)}
 
 
                     </div>
@@ -37,6 +36,10 @@ const ItemDetail = ({ name, img, detail, price, addCart, irAlCarrito }) => {
 
 
             </div>
+
+
+
+
         </Fragment>
     )
 }

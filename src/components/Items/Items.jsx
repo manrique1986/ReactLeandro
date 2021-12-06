@@ -1,5 +1,11 @@
  import honey from './../../assets/images.jpg'
+ import scottish from './../../assets/scottish.jpg'
+ import blonde from './../../assets/blonde2.jpg'
+ import ipa from './../../assets/ipa.jpg'
+
+
  export const productos = [
+ 
 
     {
 
@@ -15,7 +21,7 @@
          price: 250,
          stock: 15,
          id: "2",
-         img: "img/scottish.jpg",
+         img: scottish,
          detail:"Quizás la más definida de sus características que diferencian a las cervezas de Escocia  de otras oscuras es su sabor limpio, fresco. Las Scottish carecen del paladar seco de          una Irish Stout, el tostado de una Porter y la complejidad de ésteres de una Brown."
      },
 
@@ -25,7 +31,7 @@
         price: 250,
         stock: 15,
         id: "3",
-        img: "img/blonde2.jpg",
+        img: blonde,
         detail:"Su nombre en inglés lo dice todo: rubias. Las Blonde Ale suelen ser de color amarillo  pálido o dorado. Tienen un cuerpo ligero, poco amargor y aroma a lúpulo y algunos toques dulces (debido a la malta). Por eso las Blonde son conocidas como el estilo de cerveza artesanal para iniciarse."
      },
 
@@ -35,7 +41,7 @@
         price: 250,
         stock: 15,
         id:" 4",
-        img: "img/ipa.jpg",
+        img: ipa,
         detail:"En una IPA encontramos un prominente a intenso aroma a lúpulo, ya sean cítricos, florales, pináceos, resinosos, especiados, a frutas, etc. ... El amargor y el sabor a lúpulo pueden permanecer en el retrogusto. Maridaje: puede resultar un gran aliado si los platos son muy especiados o picantes."
      },
     

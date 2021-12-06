@@ -25,4 +25,4 @@ Ejecuta en el directorio del proyecto
 yarn start
 para inicializar el proyecto, que se visualizará en [http://localhost:3000]
 
-![Halsey](https://imagizer.imageshack.com/img922/7185/tEeOu1.gif)
+![Halsey](/assets/React-project.gif)
