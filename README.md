@@ -2,13 +2,18 @@
 
 Halsey es un e-commerce de venta de cerveza artesanal
 
-Contiene:
+### Contiene:
 
 1-Categorias por funcionalidad
+
 2-Posibilidad de compra desde listado de items y desde el detalle del item
+
 3-Selección de cantidad de productos con control al stock
+
 4-Carrito de compras 
+
 5-Landing page
+
 6-Acerca de nosotros
 
 ### `INSTALACION`
