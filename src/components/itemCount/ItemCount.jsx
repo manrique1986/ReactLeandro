@@ -1,8 +1,15 @@
 import { useState } from "react";
 import "./index.css";
+import {useContext} from "react"
+import ContextProduct from "../context/ContextProducts"
+
+const ItemCount = ({name, img, detail, price})=> {
+
+    const product = {name,img,detail,price}
+
+    const {addItem} = useContext(ContextProduct)
 
 
-const ItemCount = ({addCart})=> {
     const [number, setNumber] = useState(0)
 
     const onAdd = () => {
@@ -31,7 +38,7 @@ const ItemCount = ({addCart})=> {
             </div>
 
             <div>
-                <button disabled={number === 0} onClick={() => addCart(number)}
+                <button disabled={number === 0} onClick={() => addItem(product, number)}
                 >Agregar al carrito
                 </button>
             </div>

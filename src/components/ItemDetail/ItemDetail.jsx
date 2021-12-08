@@ -27,7 +27,7 @@ const ItemDetail = ({ name, img, detail, price, addCart, irAlCarrito }) => {
                         <p className="cardDetail">{detail}</p>
 
                         {irAlCarrito ? (<><Link to="/Cart">Terminar compra</Link></>) :
-                            (<>< ItemCount addCart={addCart} /></>)}
+                            (<>< ItemCount name ={name} img = {img} detail= {detail} price = {price}addCart={addCart} /></>)}
 
 
                     </div>

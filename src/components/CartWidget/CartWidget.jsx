@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
-
+import {useContext} from "react"
+import ContextProduct from "../context/ContextProducts"
 
 const CartWidget = () => {
+
+  const {products} = useContext(ContextProduct)
 
 
 
@@ -12,7 +15,7 @@ const CartWidget = () => {
       <button class="btn btn-outline-dark" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">
         <i class="bi-cart-fill me-1"></i>
         Carrito
-        <span id="contador" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+        <span id="contador" class="badge bg-dark text-white ms-1 rounded-pill">{products.length}</span>
       </button>
 
     </Link>

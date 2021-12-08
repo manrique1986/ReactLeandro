@@ -1,6 +1,13 @@
 import Item from '../Item/Item';
+import { useContext} from "react"
+import Products from '../context/ContextProducts'
 
-const itemList = ({items}) => {
+
+function  ItemList ({items}) {
+
+    const {products} = useContext(Products)
+
+
 
     return (
 
@@ -15,4 +22,4 @@ const itemList = ({items}) => {
     );
 };
 
-export default itemList
+export default ItemList  
