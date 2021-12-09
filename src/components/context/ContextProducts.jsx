@@ -8,9 +8,9 @@ export function ProductsProvider({ children }) {
 
     const [products, setProducts] = useState([])
 
-    const addItem = (product, cantidad) =>{
+    const addItem = (product, cantidad) => {
 
-        setProducts (products.concat(product))
+        setProducts(products.concat(product))
     }
 
 
