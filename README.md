@@ -32,4 +32,4 @@ para inicializar el proyecto, que se visualizará en [http://localhost:3000]
 
 ## Gif
 
-![Halsey](/https://imagizer.imageshack.com/img922/7185/tEeOu1.gif)
+![Halsey](public/img/React-project.gif)
