@@ -32,6 +32,8 @@ const ItemDetail = ({ name, img, detail, price, addCart, irAlCarrito }) => {
 
                     </div>
 
+
+
                 </div>
 
 

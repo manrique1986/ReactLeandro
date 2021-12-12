@@ -5,6 +5,22 @@ import { productos } from "../Items/Items";
 import { useParams } from "react-router-dom"
 
 const ItemListContainer = ({ greeting }) => {
+
+
+
+    /*useEffect (() => {
+
+        const db = getFirestore()
+        const ref = collection (db, "products")
+        getDocs(ref)
+        .then((snapShop) =>{
+            snapShop.docs.map((doc) => console.log(doc.data()))
+        })
+    }, []);*/
+
+
+
+
     
 
     const [items, setItems] = useState([]);

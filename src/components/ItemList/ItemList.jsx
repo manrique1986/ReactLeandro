@@ -6,6 +6,7 @@ import Products from '../context/ContextProducts'
 function  ItemList ({items}) {
 
     const {products} = useContext(Products)
+    
 
 
 

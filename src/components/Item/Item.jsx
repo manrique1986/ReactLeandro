@@ -10,28 +10,31 @@ const item = ({ item }) => {
 
     return (
 
-        <Link to= {`/product/${item.id}`}>
-            
 
-            <div className="container" >
 
-                <div className="card">
-                    <p className="cardTitle">{item.name}</p>
 
-                    <img src={item.img} className="cardImg" alt="producto" />
-                    <div className="cardData">
+        <div className="container" >
 
-                        <span className="cardPrice">${item.price}</span>
-                    </div>
+            <div className="card">
+                <h3 className="cardTitle">{item.name}</h3>
 
+                <img src={item.img} className="cardImg" alt="producto" />
+                <div className="cardData">
+
+                    <span className="cardPrice">${item.price}</span>
                 </div>
 
+                <Link to={`/product/${item.id}`}>
+
+                    <p>detalle</p>
+                </Link>
 
             </div>
 
+        
 
+        </div>
 
-        </Link>
 
 
     )

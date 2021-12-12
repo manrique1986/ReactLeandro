@@ -1,0 +1,11 @@
+
+
+.cartContainer{
+text-align: center;
+height : 15%;
+width: 25%;
+margin : 20px;
+box-shadow:  10px 15px 20px 0 brown;
+border-radius: 25em;
+float: left;
+}
