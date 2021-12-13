@@ -1,46 +1,29 @@
 import React from "react"
 import { useContext } from "react"
-import ContextProduct from "../context/ContextProducts"
+import ContextProduct from "../context/ContextProducts.jsx"
 import Products from "../context/ContextProducts"
 import useDeleteProduct from "../context/ContextProducts"
 import "./index.css";
 
 
 const Cart = () => {
-    /*const deleteProduct = useDeleteProduct()*/
-    const { products } = useContext(ContextProduct)
+    const { products, deleteItem } = useContext(ContextProduct)
   
-
-   /* const deleteProductCart = (product) => {
-        deleteProduct (product)
-    }*/
-
-
-
-
-    
-
-
-    
 
     return (
         <div>
-            {products?.map((product) => {   
+            {products?.map((product,index) => {   
                 return (
 
-
-
-                    <div className="cartContainer">
+                    <div key={product.id}>
                         <h1>{product.name}</h1>
                         <img src={product.img} alt="" />
                         <h3>${product.price}</h3>
-                        <button >Eliminar</button>
-                    
-
+                        <button onClick={()=> deleteItem(product)}>Eliminar</button>
                     </div>
                 )
+            })}
 
-            })}S
         </div>
     )
 }

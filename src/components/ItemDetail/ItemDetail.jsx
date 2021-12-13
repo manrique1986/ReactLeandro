@@ -8,26 +8,26 @@ import { Link } from "react-router-dom"
 
 
 
-const ItemDetail = ({ name, img, detail, price, addCart, irAlCarrito }) => {
+const ItemDetail = ({ product, irAlCarrito}) => {
     return (
 
         <Fragment>
 
-            <img src={img} className="detailImg tilt-in-fwd-bl" alt="producto" />
+            <img src={product.img} className="detailImg tilt-in-fwd-bl" alt="producto" />
 
 
             <div className="container1" >
 
                 <div className="card1">
-                    <h1 className="cardTitle1">{name}</h1>
+                    <h1 className="cardTitle1">{product.name}</h1>
 
 
                     <div className="cardData">
 
-                        <p className="cardDetail">{detail}</p>
+                        <p className="cardDetail">{product.detail}</p>
 
                         {irAlCarrito ? (<><Link to="/Cart">Terminar compra</Link></>) :
-                            (<>< ItemCount name ={name} img = {img} detail= {detail} price = {price}addCart={addCart} /></>)}
+                            (<>< ItemCount product={product} /></>)}
 
 
                     </div>

@@ -40,7 +40,7 @@
         name: 'Ipa',
         price: 250,
         stock: 15,
-        id:" 4",
+        id:"4" ,
         img: ipa,
         detail:"En una IPA encontramos un prominente a intenso aroma a lúpulo, ya sean cítricos, florales, pináceos, resinosos, especiados, a frutas, etc. ... El amargor y el sabor a lúpulo pueden permanecer en el retrogusto. Maridaje: puede resultar un gran aliado si los platos son muy especiados o picantes."
      },

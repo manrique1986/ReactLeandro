@@ -3,9 +3,8 @@ import "./index.css";
 import {useContext} from "react"
 import ContextProduct from "../context/ContextProducts"
 
-const ItemCount = ({name, img, detail, price})=> {
+const ItemCount = ({product})=> {
 
-    const product = {name,img,detail,price}
 
     const {addItem} = useContext(ContextProduct)
 

@@ -54,5 +54,5 @@ export const ItemDetailContainer = () => {
 
     return loader ? (
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
-    ) : <ItemDetail {...product} addCart={addCart} irAlCarrito={irAlCarrito} />;
+    ) : <ItemDetail product={product} addCart={addCart} irAlCarrito={irAlCarrito} />;
 };

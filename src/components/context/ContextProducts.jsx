@@ -16,26 +16,25 @@ export function ProductsProvider({ children }) {
         
     }
 
-    /*const deleteProduct = (product) => {
+    const deleteItem = (product) => {
 
-        setProducts(products.filter(item => item.id !== product))
-    }*/
-
-
+        setProducts(products.filter(item => item.id !== product.id))
+    
+    }
 
 
     return (
 
-        <Products.Provider value={{ products, addItem }}>
+        <Products.Provider value={{ products, addItem, deleteItem }}>
             {children}
         </Products.Provider>
     )
 }
 
-export function useDeleteProduct() {
+// export function useDeleteProduct() {
 
-    return useContext (Products).deleteProduct
-}
+//     return useContext (Products).deleteProduct
+// }
 
 
 
