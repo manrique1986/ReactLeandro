@@ -16,23 +16,23 @@ export function ProductsProvider({ children }) {
         
     }
 
-    const deleteFromProduct = (product) => {
+    /*const deleteProduct = (product) => {
 
         setProducts(products.filter(item => item.id !== product))
-    }
+    }*/
 
 
 
 
     return (
 
-        <Products.Provider value={{ products, addItem, deleteFromProduct }}>
+        <Products.Provider value={{ products, addItem }}>
             {children}
         </Products.Provider>
     )
 }
 
-export function useDeleteFromProduct() {
+export function useDeleteProduct() {
 
     return useContext (Products).deleteProduct
 }
