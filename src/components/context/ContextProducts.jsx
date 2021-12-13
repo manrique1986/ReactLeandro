@@ -9,10 +9,24 @@ export function ProductsProvider({ children }) {
     const [products, setProducts] = useState([])
 
 
+    const isOnItem = (product) =>{
+
+        return products?.findIndex(item => item.id===product.id)
+    }
+
+
 
     const addItem = (product, cantidad) => {
+        const indice = isOnItem(product) 
+        if (indice === -1){
 
-        setProducts(products.concat(product))
+            setProducts(products.concat(product))
+
+        }else{
+            alert("Ya se encuentra agregado al carrito")
+        }
+
+        
         
     }
 
