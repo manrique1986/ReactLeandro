@@ -23,6 +23,8 @@ const firebaseConfig = {
 // Initialize Firebase
 initializeApp(firebaseConfig);
 
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
