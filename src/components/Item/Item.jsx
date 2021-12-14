@@ -24,7 +24,7 @@ const item = ({ item }) => {
                     <span className="cardPrice">${item.price}</span>
                 </div>
 
-                <Link to={`/product/${item.id}`}>
+                <Link to={`/product/${item.id} `}>
 
                     <p>detalle</p>
                 </Link>

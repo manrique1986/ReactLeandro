@@ -15,21 +15,17 @@ const Header = () => {
             <li className="nav-item ">
               <Link className="nav-link active" aria-current="page" to="/Inicio">Inicio</Link>
             </li>
-            <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/Productos">Productos</Link>
-            </li>
-
             <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
+          <Link class="nav-link dropdown-toggle" to="/Productos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </Link>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><Link className="dropdown-item" to="/Productos">Todos</Link></li>
+            <li><Link className="dropdown-item" to="/category/dulce">Sabor dulce</Link></li>
+            <li><Link className="dropdown-item" to="/category/amarga">Sabor amarga</Link></li>
 
           </ul>
         </li>
-
             <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/Galeria">Galeria</Link>
             </li>

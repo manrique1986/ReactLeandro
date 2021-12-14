@@ -24,26 +24,26 @@ const ItemListContainer = ({ greeting }) => {
 
 
 
-
+    
 
     const [items, setItems] = useState([]);
 
-
+    const { catId } = useParams();
 
     useEffect(() => {
         const traerProductos = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(productos);
-            }, 2000);
+            }, 1000);
         });
         traerProductos
             .then((res) => {
-                setItems(res);
+                catId 
+                ? setItems(res.filter((item) => item.category === catId ))
+               : setItems(res);
             })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
+
+    }, [catId ]);
 
 
     return (

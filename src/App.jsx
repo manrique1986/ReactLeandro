@@ -26,6 +26,7 @@ function App() {
           <Route path="/Inicio" element={<Inicio />} />
           <Route path="/Galeria" element={<Galeria />} />
           <Route path="/Productos/" element={<ItemListContainer className="tracking-in-contract" greeting="Bienvenidos a HALSEY" />} />
+          <Route path="/category/:catId" element={<ItemListContainer />} />
           <Route path="/product/:itemId" element={<ItemDetailContainer />} />
           <Route path="/Cart/" element={<Cart />} />
 
