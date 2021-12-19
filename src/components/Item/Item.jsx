@@ -20,8 +20,6 @@ const item = ({ item }) => {
 
                 <img src={item.img} className="cardImg" alt="producto" />
                 <div className="cardData">
-
-                    <span className="cardPrice">${item.price}</span>
                 </div>
 
                 <Link to={`/product/${item.id} `}>

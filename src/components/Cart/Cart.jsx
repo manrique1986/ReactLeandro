@@ -8,21 +8,29 @@ import "./index.css";
 
 const Cart = () => {
     const { products, deleteItem } = useContext(ContextProduct)
-  
+
+
+
+ 
+
 
     return (
         <div>
-            {products?.map((product,index) => {   
+            {products?.map((product, index) => {
                 return (
 
-                    <div key={product.id}>
+                    <div   className="cart" key={product.id}>
                         <h1>{product.name}</h1>
                         <img src={product.img} alt="" />
-                        <h3>${product.price}</h3>
-                        <button onClick={()=> deleteItem(product)}>Eliminar</button>
+                        <button onClick={() => deleteItem(product)}>Eliminar</button>
                     </div>
                 )
             })}
+            <div  className = "price">
+
+            <h3>total ${}</h3>
+
+            </div>
 
         </div>
     )

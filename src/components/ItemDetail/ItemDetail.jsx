@@ -13,6 +13,9 @@ const ItemDetail = ({ product, irAlCarrito}) => {
 
         <Fragment>
 
+
+            
+
             <img src={product.img} className="detailImg tilt-in-fwd-bl" alt="producto" />
 
 
@@ -26,7 +29,10 @@ const ItemDetail = ({ product, irAlCarrito}) => {
 
                         <p className="cardDetail">{product.detail}</p>
 
-                        {irAlCarrito ? (<><Link to="/Cart">Terminar compra</Link></>) :
+                        <span className="cardPrice">${product.price}</span>
+
+                        {irAlCarrito ?
+                         (<><Link to="/Cart">Terminar compra</Link></>) :
                             (<>< ItemCount product={product} /></>)}
 
 
@@ -38,7 +44,6 @@ const ItemDetail = ({ product, irAlCarrito}) => {
 
 
             </div>
-
 
 
 

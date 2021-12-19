@@ -2,7 +2,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
-import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import  {ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './components/Inicio/Inicio';
 import Galeria from './components/Galeria/Galeria'

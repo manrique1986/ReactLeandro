@@ -3,47 +3,59 @@ import "./index.css";
 import ItemList from "../ItemList/ItemList";
 import { productos } from "../Items/Items";
 import { useParams } from "react-router-dom"
-// import { getDocs, collection, getFirestore } from "firebase/firestore"
+import db from '../firebase/firebase.jsx';
+import { collection, query, where, getDocs } from 'firebase/firestore';
 
 const ItemListContainer = ({ greeting }) => {
 
-    // const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([])
+
+
+    // const [items, setItems] = useState([]);
+
+    // const { catId } = useParams();
 
     // useEffect(() => {
+    //     const traerProductos = new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             resolve(productos);
+    //         }, 1000);
+    //     });
+    //     traerProductos
+    //         .then((res) => {
+    //             catId
+    //                 ? setItems(res.filter((item) => item.category === catId))
+    //                 : setItems(res);
+    //         })
 
-    //     const db = getFirestore()
-    //     const ref = collection(db, 'products')
-    //     getDocs(ref)
-    //     .then((snapShot) => {
-    //         setProducts(snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data()})))
-    //         /* snapShot.docs.map((product) => setProducts(prev => ([...prev, product.data()]))) */
-    //         setIsLoading(false)
-    //       })
+    // }, [catId]);
 
-    // }, []);
-
-
-
-    
 
     const [items, setItems] = useState([]);
-
+    const [loader, setLoader] = useState(true);
     const { catId } = useParams();
 
-    useEffect(() => {
-        const traerProductos = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(productos);
-            }, 1000);
-        });
-        traerProductos
-            .then((res) => {
-                catId 
-                ? setItems(res.filter((item) => item.category === catId ))
-               : setItems(res);
-            })
 
-    }, [catId ]);
+
+
+    useEffect(() => {
+        setLoader(true);
+        
+        const myItems = catId
+          ? query(collection(db, 'productos'), where('category', '==', catId))
+          : collection(db, 'productos');
+       
+            
+        getDocs(myItems)
+          .then((res) => {
+            const results = res.docs.map((doc) => {
+              return { ...doc.data(), id: doc.id };
+            });
+          
+            setItems(results);
+            }) 
+          .finally(() => setLoader(false));
+      }, [catId]);
 
 
     return (
