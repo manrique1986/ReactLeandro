@@ -7,7 +7,7 @@ import "./index.css";
 
 
 const Cart = () => {
-    const { products, deleteItem } = useContext(ContextProduct)
+    const { products, deleteItem, } = useContext(ContextProduct)
 
 
 

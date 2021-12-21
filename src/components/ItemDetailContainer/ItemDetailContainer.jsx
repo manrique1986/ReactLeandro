@@ -12,14 +12,12 @@ export const ItemDetailContainer = () => {
     const [product, setProduct] = useState([]);
     const [loader, setLoader] = useState(true)
     const [irAlCarrito, setIrAlCarrito] = useState(false)
-    const [detail, setDetail] = useState([])
-    const [isLoading, setIsLoading] = useState(true);
 
 
 
 
 
-    const { itemId } = useParams()
+    // const { itemId } = useParams()
 
     // useEffect(() => {
 
@@ -44,30 +42,9 @@ export const ItemDetailContainer = () => {
 
     // }, [itemId]);
 
-   
+    const addCart = (cantidad) => {
 
-
-    useEffect(() => {
-        setIsLoading(true);
-    
-        const myItem = doc(db, 'productos', itemId);
-    
-        
-        getDoc(myItem)
-          .then((res) => {
-            const result =  { id: res.id, ...res.data() };
-            setDetail(result);
-          })
-          .finally(() => {
-            setIsLoading(false);
-          });
-      }, []);
-
-      
-
-      const addCart = (cantidad) => {
-
-        setIrAlCarrito(true);
+         setIrAlCarrito(true);
 
         console.log({ ...product, cantidad: cantidad });
 
@@ -77,11 +54,34 @@ export const ItemDetailContainer = () => {
 
 
 
-    return isLoading ? (
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
 
-        
-    ) : <ItemDetail product={product} addCart={addCart} irAlCarrito={irAlCarrito}  />;
+    const [detail, setDetail] = useState([])
+    const [isLoading, setIsLoading] = useState(true);
+    const { itemId } = useParams();
+    
+   
+    useEffect(() => {
+      setIsLoading(true);
+  
+      const myItem = doc(db, 'productos', itemId);
+
+      console.log(myItem);
+  
+      
+      getDoc(myItem)
+        .then((res) => {
+          const result =  { id: res.id, ...res.data() };
+          setDetail(result);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }, [itemId]);
+
+
+
+
+    return  <ItemDetail product={detail} addCart={addCart} irAlCarrito={irAlCarrito}  />;
 
     
 };
