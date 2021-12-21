@@ -37,9 +37,14 @@ export function ProductsProvider({ children }) {
     }
 
 
+    const clearItems = () => {
+        setProducts([])
+    }
+
+
     return (
 
-        <Products.Provider value={{ products, addItem, deleteItem }}>
+        <Products.Provider value={{ products, addItem, deleteItem, clearItems }}>
             {children}
         </Products.Provider>
     )

@@ -3,10 +3,8 @@ import "./index.css";
 import {useContext} from "react"
 import ContextProduct from "../context/ContextProducts"
 
-const ItemCount = ({product})=> {
+const ItemCount = ()=> {
 
-
-    const {addItem} = useContext(ContextProduct)
 
 
     const [number, setNumber] = useState(0)
@@ -36,11 +34,7 @@ const ItemCount = ({product})=> {
 
             </div>
 
-            <div>
-                <button disabled={number === 0} onClick={() => addItem(product, number)}
-                >Agregar al carrito
-                </button>
-            </div>
+          
 
         </div>
 
