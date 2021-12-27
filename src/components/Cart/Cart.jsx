@@ -23,7 +23,12 @@ const Cart = () => {
             return total
         },
         [products],
+        
     )
+  
+
+
+
 
 
 
@@ -51,7 +56,7 @@ const Cart = () => {
                         <button onClick={() => deleteItem(product)}>Eliminar</button>
                     </div>
                 )
-            })}
+            })} 
 
 
             <section>

@@ -1,5 +1,6 @@
 import React from "react"
 import { useState, useEffect, useContext } from "react";
+import { addDoc,collection, getFirestore, getDocs } from 'firebase/firestore';
 
 
 const Products = React.createContext()  
@@ -7,6 +8,9 @@ const Products = React.createContext()
 export function ProductsProvider({ children }) {
 
     const [products, setProducts] = useState([])
+    const [items, setItems] = useState([]);
+    const db = getFirestore();
+    const refCart = collection (db, 'cartItems')
 
 
     const isOnItem = (product) =>{
@@ -16,11 +20,23 @@ export function ProductsProvider({ children }) {
 
 
 
+
+    useEffect(() => {
+            
+        getDocs(refCart)
+          .then((res) => {
+            setProducts(res.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+            });
+          
+            }) 
+
+
+
     const addItem = (product, cantidad) => {
         const indice = isOnItem(product) 
         if (indice === -1){
 
-            setProducts(products.concat(product))
+            addDoc(refCart,product)
 
         }else{
             alert("Ya se encuentra agregado al carrito")

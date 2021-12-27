@@ -65,7 +65,6 @@ export const ItemDetailContainer = () => {
   
       const myItem = doc(db, 'productos', itemId);
 
-      console.log(myItem);
   
       
       getDoc(myItem)
@@ -77,6 +76,9 @@ export const ItemDetailContainer = () => {
           setIsLoading(false);
         });
     }, [itemId]);
+
+
+    
 
 
 

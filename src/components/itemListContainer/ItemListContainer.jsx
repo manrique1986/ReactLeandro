@@ -33,6 +33,7 @@ const ItemListContainer = ({ greeting }) => {
 
     const [items, setItems] = useState([]);
     const [loader, setLoader] = useState(true);
+    const refCart = collection (db, 'cartItems')
     const { catId } = useParams();
 
 
@@ -55,7 +56,11 @@ const ItemListContainer = ({ greeting }) => {
             setItems(results);
             }) 
           .finally(() => setLoader(false));
+
+
+          
       }, [catId]);
+      console.log (productos)
 
 
     return (

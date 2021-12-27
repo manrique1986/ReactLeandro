@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback} from "react";
 import "./index.css";
 import {useContext} from "react"
 import ContextProduct from "../context/ContextProducts"
@@ -8,6 +8,7 @@ const ItemCount = ()=> {
 
 
     const [number, setNumber] = useState(0)
+
 
     const onAdd = () => {
         if (number < 10) {

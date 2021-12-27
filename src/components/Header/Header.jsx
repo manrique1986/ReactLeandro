@@ -21,7 +21,8 @@ const Header = () => {
           </Link>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><Link className="dropdown-item" to="/Productos">Todos</Link></li>
-            <li><Link className="dropdown-item" to="/category/dulce">Sabor dulce</Link></li>
+            <li 
+            ><Link className="dropdown-item" to="/category/dulce">Sabor dulce</Link></li>
             <li><Link className="dropdown-item" to="/category/amarga">Sabor amarga</Link></li>
 
           </ul>
