@@ -9,6 +9,8 @@ export function ProductsProvider({ children }) {
 
     const [products, setProducts] = useState([])
     const [items, setItems] = useState([]);
+
+    
     const db = getFirestore();
     const refCart = collection (db, 'cartItems')
 
@@ -34,9 +36,10 @@ export function ProductsProvider({ children }) {
 
     const addItem = (product, cantidad) => {
         const indice = isOnItem(product) 
-        if (indice === -1){
+        if (indice === -1){ 
 
-            addDoc(refCart,product)
+            // addDoc(refCart,product)
+            setItems()
 
         }else{
             alert("Ya se encuentra agregado al carrito")

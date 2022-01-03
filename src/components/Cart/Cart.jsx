@@ -1,8 +1,6 @@
 import React from "react"
 import { useContext, useCallback } from "react"
 import ContextProduct from "../context/ContextProducts.jsx"
-import Products from "../context/ContextProducts"
-import useDeleteProduct from "../context/ContextProducts"
 import "./index.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom"
@@ -41,7 +39,7 @@ const Cart = () => {
         <>
             <h2 className="elijeProduct">Todavía no has elegido productos!</h2>
             <Link to="/productos"><button className=" volver btn btn-primary ">Volver a productos</button></Link>
-            <img src="https://res.cloudinary.com/dytpump6i/image/upload/v1640113507/fondo_vufwbn.jpg"></img>
+            <img src="https://res.cloudinary.com/dytpump6i/image/upload/v1640113507/fondo_vufwbn.jpg" alt="imagen" ></img>
         </>
         :
         <div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import ItemList from "../ItemList/ItemList";
-import { productos } from "../Items/Items";
 import { useParams } from "react-router-dom"
 import db from '../firebase/firebase.jsx';
 import { collection, query, where, getDocs } from 'firebase/firestore';
@@ -33,7 +32,6 @@ const ItemListContainer = ({ greeting }) => {
 
     const [items, setItems] = useState([]);
     const [loader, setLoader] = useState(true);
-    const refCart = collection (db, 'cartItems')
     const { catId } = useParams();
 
 
@@ -56,11 +54,8 @@ const ItemListContainer = ({ greeting }) => {
             setItems(results);
             }) 
           .finally(() => setLoader(false));
-
-
-          
       }, [catId]);
-      console.log (productos)
+      
 
 
     return (

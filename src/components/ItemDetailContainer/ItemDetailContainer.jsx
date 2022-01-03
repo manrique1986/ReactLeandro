@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import { productos } from "../Items/Items";
 import { useParams } from "react-router-dom"
 import "./index.css"
 import db from '../firebase/firebase';
@@ -10,7 +9,6 @@ import { doc, getDoc } from 'firebase/firestore';
 
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState([]);
-    const [loader, setLoader] = useState(true)
     const [irAlCarrito, setIrAlCarrito] = useState(false)
 
 

@@ -1,7 +1,5 @@
-import { useState, useCallback} from "react";
+import { useState} from "react";
 import "./index.css";
-import {useContext} from "react"
-import ContextProduct from "../context/ContextProducts"
 
 const ItemCount = ()=> {
 

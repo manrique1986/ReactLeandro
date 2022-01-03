@@ -40,7 +40,7 @@ const ItemDetail = ({ product, irAlCarrito }) => {
                         <span className="cardPrice">${product.price}</span>
 
                         <div>
-                            <button onClick={() => addItem(product)}
+                            <button className="carrito" onClick={() => addItem(product)}
                             >Agregar al carrito
                             </button>
                         </div>
