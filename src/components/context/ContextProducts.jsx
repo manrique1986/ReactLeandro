@@ -23,14 +23,14 @@ export function ProductsProvider({ children }) {
 
 
 
-    useEffect(() => {
+    // useEffect(() => {
             
-        getDocs(refCart)
-          .then((res) => {
-            setProducts(res.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-            });
+    //     getDocs(refCart)
+    //       .then((res) => {
+    //         setProducts(res.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    //         });
           
-            }) 
+    //         }) 
 
 
 
@@ -39,7 +39,7 @@ export function ProductsProvider({ children }) {
         if (indice === -1){ 
 
             // addDoc(refCart,product)
-            setItems()
+            setProducts(products.concat(product))
 
         }else{
             alert("Ya se encuentra agregado al carrito")

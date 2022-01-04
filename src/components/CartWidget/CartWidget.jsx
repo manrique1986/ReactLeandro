@@ -12,6 +12,7 @@ const CartWidget = () => {
 
     <Link to="/cart">
 
+
       <span>
         {
           (products.length !== 0) ?

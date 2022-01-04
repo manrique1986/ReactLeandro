@@ -1,30 +1,78 @@
 
 
-.cart{
-text-align: center;
-height : 15%;
-width: 25%;
-margin : 20px;
-box-shadow:  4px 8px 11px 0 brown;
-border-radius: 0.5em;
+.imgCart{
+    width: 25px;
+    height:auto;
 
+}
+
+.containerCart{
+
+    display: flex;
+    position: absolute;
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+
+   
+
+  
+}
+
+.containerCart img{
+    width: 300px;
+}
+
+.nameCart{
+
+    color: brown;
+}
+.priceCart{
+
+    color: brown;
 }
 
 
 .borrar{
-
-    float: right;
-    padding: 50px;
     border: none;
+    margin: 15px;
     background: none;
-    border-radius: 25em;
-    border: solid 1px brown;
+    box-shadow: 2px 5px 20px 0 brown;
+    border-radius: 2em;
+    transition: .3s;
+
 }
+
+.borrar:hover{
+
+    background-color: brown;
+    color : white;
+}
+
+.terminar{
+    border: none;
+    margin: 15px;
+    background: none;
+    box-shadow: 2px 5px 20px 0 brown;
+    border-radius: 2em;
+    transition: .3s;
+}
+
+.terminar:hover{
+    background-color: brown;
+    color : white;
+}
+
+
+
+
+
 
 .total{
 
     color: brown;
     text-align: center;
+   margin: 150 px;
 
 }
 
@@ -36,4 +84,17 @@ border-radius: 0.5em;
 
 .volver {
     text-align: center;
+}
+
+.eliminar {
+    border-radius: 3em;
+    background-color: brown;
+    color: white
+}
+
+.eliminar:hover{
+
+    background-color:white;
+    color: brown;
+  
 }

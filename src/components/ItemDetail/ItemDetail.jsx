@@ -22,9 +22,6 @@ const ItemDetail = ({ product, irAlCarrito }) => {
 
 
             <img src={product.img} className="detailImg tilt-in-fwd-bl" alt="producto" />
-            <Link to="/productos">
-                <button class="btn btn-primary">Elegir otro producto</button>
-            </Link>
 
 
             <div className="container1" >
@@ -46,6 +43,9 @@ const ItemDetail = ({ product, irAlCarrito }) => {
                         </div>
 
 
+
+
+
                     </div>
 
 
@@ -57,6 +57,10 @@ const ItemDetail = ({ product, irAlCarrito }) => {
 
 
             </div>
+
+            <Link to="/productos">
+                <button class="btn btn-primary">Elegir otro producto</button>
+            </Link>
 
 
 

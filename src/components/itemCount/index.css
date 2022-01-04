@@ -11,11 +11,18 @@
   background: none;
   box-shadow: 2px 5px 20px 0 brown;
   border-radius: 2em;
+  
+ 
 }
 
 .agragar{
 
   border: solid 1px brown;
   background: none;
+}
+
+.numero{
+
+  color: brown;
 }
 

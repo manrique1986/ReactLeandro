@@ -21,18 +21,8 @@ const Cart = () => {
             return total
         },
         [products],
-        
+
     )
-  
-
-
-
-
-
-
-
-
-
 
 
     return ((products.length === 0) ?
@@ -42,37 +32,46 @@ const Cart = () => {
             <img src="https://res.cloudinary.com/dytpump6i/image/upload/v1640113507/fondo_vufwbn.jpg" alt="imagen" ></img>
         </>
         :
-        <div>
+        <div className="containerCart">
             {products?.map((product, index) => {
                 return (
 
                     <div className="cart" key={product.id}>
-                        <img src={product.img} alt="" />
-                        <h1>{product.name}</h1>
-                        <h4>$ {product.price}</h4>
+                        <img className="imgCart" src={product.img} alt="" />
+                        <h1 className="nameCart">{product.name}</h1>
+                        <h4 className="priceCart">$ {product.price}</h4>
                         < ItemCount product={product} />
-                        <button onClick={() => deleteItem(product)}>Eliminar</button>
+                        <button className="eliminar" onClick={() => deleteItem(product)}>Eliminar</button>
                     </div>
                 )
-            })} 
+            })}
 
 
             <section>
-
-                <button className="borrar" onClick={() => clearItems()}>Eliminar todo</button>
-
+            <button className="borrar" onClick={() => clearItems()}>Eliminar todo</button>
 
                 <h2 className="total">Total: ${
                     totales()}
                 </h2>
-                <button className="button">Terminar compra</button>
+
+                <Link to="/FinalizePurchase">
+                <button className="terminar">Terminar compra</button>
+                </Link>
 
             </section>
 
 
+           
+
+
         </div>
+        
 
     )
+
+    
 }
+
+
 
 export default Cart

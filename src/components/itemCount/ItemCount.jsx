@@ -5,6 +5,7 @@ const ItemCount = ()=> {
 
 
 
+
     const [number, setNumber] = useState(0)
 
 
@@ -19,6 +20,9 @@ const ItemCount = ()=> {
             setNumber(number - 1)
         }
     }
+
+    
+
 
 
   

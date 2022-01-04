@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './components/Inicio/Inicio';
 import Galeria from './components/Galeria/Galeria'
 import Cart from './components/Cart/Cart'
+import FinalizePurchase from './components/FinalizePurchase/FinalizePurchase'
 import { ProductsProvider } from './components/context/ContextProducts'
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/category/:catId" element={<ItemListContainer />} />
           <Route path="/product/:itemId" element={<ItemDetailContainer />} />
           <Route path="/Cart/" element={<Cart />} />
+          <Route path="FinalizePurchase/" element={<FinalizePurchase />} />
 
         </Routes>
       </ProductsProvider>

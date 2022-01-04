@@ -25,7 +25,7 @@ const item = ({ item }) => {
 
                 <Link to={`/product/${item.id} `}>
 
-                    <p>detalle</p>
+                    <p className="detalle">Detalle</p>
                 </Link>
 
             </div>
