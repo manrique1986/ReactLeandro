@@ -27,7 +27,7 @@ const Cart = () => {
 
     return ((products.length === 0) ?
         <>
-            <h2 className="elijeProduct">Todavía no has elegido productos!</h2>
+            <h2 className="elijeProduct">Todavía no has elegido productos!!!</h2>
             <Link to="/productos"><button className=" volver btn btn-primary ">Volver a productos</button></Link>
             <img src="https://res.cloudinary.com/dytpump6i/image/upload/v1640113507/fondo_vufwbn.jpg" alt="imagen" ></img>
         </>
